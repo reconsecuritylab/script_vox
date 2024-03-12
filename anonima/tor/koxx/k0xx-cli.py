@@ -14,7 +14,7 @@ def run(entry_countries, include_countries, exit_countries, forbid_countries):
     include_countries = set(include_countries.lower().split())
     exit_countries = set(exit_countries.lower().split())
 
-# (全ての国 - 入口 - 経由国 - 出口) = 禁止国
+# 全ての国 - (入口 + 経由国 + 出口) = 禁止国
     if not forbid_countries:
         forbid_countries = set([c.alpha_2.lower() for c in list(pycountry.countries)]) - entry_countries - include_countries - exit_countries
     else:
