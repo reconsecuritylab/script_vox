@@ -3,4 +3,7 @@
 	url = https://github.com/Extr3m4R4710/NetSpectre
 [submodule "app/st-NzxSec"]
 	path = app/st-NzxSec
-	url = https://github.com/NzxSec/st-NzxSec
+  url = https://github.com/NzxSec/st-NzxSec
+[submodule "anonima/tor-config/K0XX"]
+  path = anonima/tor-config/K0XX
+  url = https://github.com/Extr3m4R4710/K0XX
